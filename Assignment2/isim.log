@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\cn\Desktop\Project\DigitalCircuit\Assignment2\testGate148_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/testGate148_isim_beh.wdb 
+Running: C:\Users\cn\Desktop\Project\DigitalCircuit\Assignment2\testGate153_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/testGate153_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -8,57 +8,40 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+Stopped at time : 390 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 51 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 800 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate148.v" Line 64 
-# run all
-# restart
-# run all
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 800 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate148.v" Line 64 
+Stopped at time : 330 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 51 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 800 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate148.v" Line 75 
+Stopped at time : 330 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 56 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 800 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate148.v" Line 76 
+Stopped at time : 330 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 57 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 800 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate148.v" Line 76 
+Stopped at time : 510 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 69 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 850 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate148.v" Line 77 
+Stopped at time : 510 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 69 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 850 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate148.v" Line 77 
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 950 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate148.v" Line 78 
-ISim P.20131013 (signature 0x7708f090)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-Stopped at time : 950 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate148.v" Line 78 
+Stopped at time : 660 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 72 
