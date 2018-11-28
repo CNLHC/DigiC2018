@@ -1,0 +1,28 @@
+Command line:
+   testDigitDecoderGate_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59131
+
+Sun Nov 11 18:16:00 2018
+
+
+ Elaboration Time: 0.171875 sec
+
+ Current Memory Usage: 5832.15 Meg
+
+ Total Signals          : 54
+ Total Nets             : 63
+ Total Signal Drivers   : 52
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 54
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 147
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 5202.95 Meg
+
+Sun Nov 11 18:19:14 2018
+

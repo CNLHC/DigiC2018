@@ -1,0 +1,28 @@
+Command line:
+   dataGenerator_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  59192
+
+Sun Nov 11 18:19:15 2018
+
+
+ Elaboration Time: 0.265625 sec
+
+ Current Memory Usage: 5832.74 Meg
+
+ Total Signals          : 16
+ Total Nets             : 21
+ Total Signal Drivers   : 7
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 105
+
+ Total Simulation Time: 0.265625 sec
+
+ Current Memory Usage: 5832.69 Meg
+
+Sun Nov 11 18:19:48 2018
+

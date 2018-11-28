@@ -1,0 +1,28 @@
+Command line:
+   testCondMux_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59232
+
+Sun Nov 11 18:22:11 2018
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 5832.24 Meg
+
+ Total Signals          : 15
+ Total Nets             : 19
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 105
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 5360.33 Meg
+
+Sun Nov 11 18:23:46 2018
+

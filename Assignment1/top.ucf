@@ -1,0 +1,27 @@
+NET "Sys_CLK" LOC = P36;	/* EEBUAA实验板的主频为50MHz */
+NET "SEG[0]" LOC = P12;		/* LED_DP 数码管的小数点 */ /* “数码管”的英文为 nixietube*/
+NET "SEG[1]" LOC = P24;		/* LED_G */
+NET "SEG[2]" LOC = P22;		/* LED_F */
+NET "SEG[3]" LOC = P17;		/* LED_E */
+NET "SEG[4]" LOC = P16;		/* LED_D */
+NET "SEG[5]" LOC = P15;		/* LED_C */
+NET "SEG[6]" LOC = P18;		/* LED_B */
+NET "SEG[7]" LOC = P23;		/* LED_A */
+NET "COM[0]" LOC = P26;		/* “位”选信号COM1，“十”位 */
+NET "COM[1]" LOC = P27;		/* “位”选信号COM1，“个”位 */
+NET "Switch[0]" LOC = P32;		/* 拨码开关第1路 */
+NET "Switch[1]" LOC = P33;		/* 拨码开关第2路 */
+NET "LED[0]" LOC = P79;		/* LED0 */
+NET "LED[1]" LOC = P83;		/* LED1 */
+NET "LED[2]" LOC = P84;		/* LED2 */
+NET "LED[3]" LOC = P85;		/* LED3 */
+NET "AD_CS" LOC = P62;		/* CS */
+NET "AD_SDO" LOC = P58;		/* SDO */
+NET "AD_SDI" LOC = P60;		/* SDI */
+NET "AD_SCLK" LOC = P61;	/* SCLK */
+NET "Key[0]" LOC = P2;		/* KEY0 */
+NET "Key[1]" LOC = P3;		/* KEY1 */
+NET "Sys_RST" LOC = P11;	/* RESET */
+
+NET "Uart_Tx" LOC = P10; 	/* Uart_Tx是以外部设备为判断方向，RX以本地设备为判断方向 */
+NET "Uart_Rx" LOC = P9; 	/* Uart_Rx是以外部设备为判断方向，TX以本地设备为判断方向 */

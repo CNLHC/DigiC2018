@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "F:/Users/Desktop/Project/DigitalCircuit/Assignment1/testKeyStabilizer_isim_beh.exe" -prj "F:/Users/Desktop/Project/DigitalCircuit/Assignment1/testKeyStabilizer_beh.prj" "work.testKeyStabilizer" "work.glbl" 
