@@ -1,18 +1,19 @@
 module Gate148(
-    input S,
-    input [7:0]NI,
+    input _S,
+    input [7:0]_I,
     output [2:0]Y,
     output Ys,
     output Yex);
 wire [7:0]I;
-not(I[0],NI[0]);
-not(I[1],NI[1]);
-not(I[2],NI[2]);
-not(I[3],NI[3]);
-not(I[4],NI[4]);
-not(I[5],NI[5]);
-not(I[6],NI[6]);
-not(I[7],NI[7]);
+not(S,_S);
+not(I[0],_I[0]);
+not(I[1],_I[1]);
+not(I[2],_I[2]);
+not(I[3],_I[3]);
+not(I[4],_I[4]);
+not(I[5],_I[5]);
+not(I[6],_I[6]);
+not(I[7],_I[7]);
 
 
 

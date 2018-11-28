@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Users\cn\Desktop\Project\DigitalCircuit\Assignment2\testGate153_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/testGate153_isim_beh.wdb 
+Running: C:\Users\cn\Desktop\Project\DigitalCircuit\Assignment2\testRTLGateToFloat_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/testRTLGateToFloat_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -8,40 +8,114 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 390 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 51 
+Stopped at time : 205 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 59 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 330 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 51 
+Stopped at time : 205 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 59 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 330 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 56 
+Stopped at time : 205 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 59 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 330 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 57 
+Stopped at time : 205 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 62 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 510 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 69 
+Stopped at time : 205 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 66 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 510 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 69 
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 67 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 660 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" Line 72 
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 69 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 70 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 71 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 71 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 72 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 71 
+# run all
+Stopped at time : 6704812 ns : File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 73
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 72 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 72 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 72 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 73 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 73 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 74 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 210 ns :  in File "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" Line 74 

@@ -1,0 +1,28 @@
+NET "Sys_CLK" LOC = P36;    
+NET "SEG[0]" LOC = P12;     
+NET "SEG[1]" LOC = P24;     
+NET "SEG[2]" LOC = P22;     
+NET "SEG[3]" LOC = P17;     
+NET "SEG[4]" LOC = P16;     
+NET "SEG[5]" LOC = P15;     
+NET "SEG[6]" LOC = P18;     
+NET "SEG[7]" LOC = P23;     
+NET "COM[0]" LOC = P26;     
+NET "COM[1]" LOC = P27;     
+NET "Switch[0]" LOC = P32;  
+NET "Switch[1]" LOC = P33;  
+NET "LED[0]" LOC = P79;     
+NET "LED[1]" LOC = P83;     
+NET "LED[2]" LOC = P84;     
+NET "LED[3]" LOC = P85;     
+NET "AD_CS" LOC = P62;      
+NET "AD_SDO" LOC = P58;     
+NET "AD_SDI" LOC = P60;     
+NET "AD_SCLK" LOC = P61;    
+NET "Key[0]" LOC = P2;      
+NET "Key[1]" LOC = P3;      
+NET "Sys_RST" LOC = P11;    
+NET "Sys_RST" PULLUP;
+NET "Uart_Tx" LOC = P10;    
+NET "Uart_Rx" LOC = P9;     
+

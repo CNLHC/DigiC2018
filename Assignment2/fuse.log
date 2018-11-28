@@ -1,17 +1,17 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/testGate153_isim_beh.exe" -prj "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/testGate153_beh.prj" "work.testGate153" "work.glbl" 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/testRTLGateToFloat_isim_beh.exe" -prj "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/testRTLGateToFloat_beh.prj" "work.testRTLGateToFloat" "work.glbl" 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/Gate153.v" into library work
+Analyzing Verilog file "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/RTLToFloat.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Compiling module Gate153
-Compiling module testGate153
+Compiling module RTLToFloat
+Compiling module testRTLGateToFloat
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Compiled 3 Verilog Units
-Built simulation executable C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/testGate153_isim_beh.exe
-Fuse Memory Usage: 27600 KB
-Fuse CPU Usage: 452 ms
+Built simulation executable C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment2/testRTLGateToFloat_isim_beh.exe
+Fuse Memory Usage: 27468 KB
+Fuse CPU Usage: 436 ms
