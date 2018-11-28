@@ -2,14 +2,14 @@ Command line:
    testRTLGateToFloat_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50716
+     -socket  53297
 
-Wed Nov 28 20:17:37 2018
+Wed Nov 28 23:36:23 2018
 
 
- Elaboration Time: 0.21875 sec
+ Elaboration Time: 0.28125 sec
 
- Current Memory Usage: 5832.34 Meg
+ Current Memory Usage: 5832.38 Meg
 
  Total Signals          : 18
  Total Nets             : 25
@@ -20,9 +20,9 @@ Wed Nov 28 20:17:37 2018
  Total Traceable Variables  : 28
  Total Scalar Nets and Variables : 131
 
- Total Simulation Time: 0.34375 sec
+ Total Simulation Time: 0.46875 sec
 
- Current Memory Usage: 5832.29 Meg
+ Current Memory Usage: 4731.33 Meg
 
-Wed Nov 28 20:18:23 2018
+Thu Nov 29 00:47:23 2018
 

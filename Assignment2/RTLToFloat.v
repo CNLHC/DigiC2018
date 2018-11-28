@@ -19,8 +19,8 @@ always @(posedge sysClk or negedge sysRst) begin
         shiftCount <=0;
 		  F<=4'b0000;
 		  P<=0;
-		  previousBuffer<=0000;
-		  outBuffer<=0000;
+		  previousBuffer<=;
+		  outBuffer<=0;
     end
     else begin 
         if(inputFlag)begin

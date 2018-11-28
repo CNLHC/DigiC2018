@@ -5,7 +5,7 @@ module dataGenerator(
     output reg [3:0]data
 );
 wire reduceKey;
-assign reduceKey = key[0] | key[1];
+assign reduceKey = key[1];
 always @( posedge reduceKey or negedge sysRst) begin
     if(!sysRst)
         data<=0;

@@ -1,0 +1,28 @@
+Command line:
+   testToFloat_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  53228
+
+Wed Nov 28 23:31:05 2018
+
+
+ Elaboration Time: 0.265625 sec
+
+ Current Memory Usage: 5832.97 Meg
+
+ Total Signals          : 78
+ Total Nets             : 96
+ Total Signal Drivers   : 69
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 71
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 180
+
+ Total Simulation Time: 0.328125 sec
+
+ Current Memory Usage: 5361.06 Meg
+
+Wed Nov 28 23:36:21 2018
+

@@ -1,0 +1,28 @@
+Command line:
+   testPureGateToFloat_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53163
+
+Wed Nov 28 23:27:13 2018
+
+
+ Elaboration Time: 0.25 sec
+
+ Current Memory Usage: 5832.42 Meg
+
+ Total Signals          : 27
+ Total Nets             : 32
+ Total Signal Drivers   : 19
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 21
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 116
+
+ Total Simulation Time: 0.3125 sec
+
+ Current Memory Usage: 5203.21 Meg
+
+Wed Nov 28 23:31:01 2018
+

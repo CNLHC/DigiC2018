@@ -7,13 +7,13 @@ module GoldenTop(
 	 output [3:0]LED
 	 );
 	 
-wire stableKey;
+wire [1:0]stableKey;
 wire [3:0]tDisplayData;
 wire [3:0]scanOutData;
 wire [3:0]F;
 wire [1:0]P;
 	 
-keyStabilizer#(.relaxTimeInMs(1200))U1(
+keyStabilizer#(.relaxTimeInMs(100))U1(
     .sysClk(Sys_CLK),
     .sysRst(Sys_RST),
     .rawKey(Key),
@@ -35,19 +35,19 @@ digitDecoder dDec(
     .data(scanOutData),
     .HEX(SEG));
 
-//RTLToFloat RTF(
-//    .sysRst(sysRst),
-//    .sysClk(sysClk),
-//    ._D(tDisplayData),
-//    .F(F),
-//    .P(P));
-//    
-
-
-GateToFloat GTF(
+RTLToFloat RTF(
+    .sysRst(Sys_RST),
+    .sysClk(Sys_CLK),
     ._D(tDisplayData),
     .F(F),
     .P(P));
+    
+
+
+//GateToFloat GTF(
+//    ._D(tDisplayData),
+//    .F(F),
+//    .P(P));
 
 //PureGateToFloat GTF(
 //    ._D(tDisplayData),

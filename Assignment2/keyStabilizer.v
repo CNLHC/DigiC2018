@@ -20,8 +20,10 @@ module keyStabilizer #(
 			keyFlag[0]<=0;
 		end
 		else begin
-			if(keyFlag[0]==0)
-				counts2<=0;
+			if(rawKey[0]==0)begin
+				counts1<=0;
+				keyFlag[0]<=0;
+				end
 			else begin
 				if(counts1<`relaxCycle)
 					counts1<=counts1+1;
@@ -40,8 +42,10 @@ module keyStabilizer #(
 			keyFlag[1]<=0;
 		end
 		else begin
-			if(keyFlag[1]==0)
+			if(rawKey[1]==0)begin
 				counts2<=0;
+				keyFlag[1]<=0;
+				end
 			else begin
 				if(counts2<`relaxCycle)
 					counts2<=counts2+1;

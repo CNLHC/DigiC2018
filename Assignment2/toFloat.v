@@ -39,11 +39,11 @@ module GateToFloat(
 endmodule
     
     
-module testRTLToFloat();
+module testToFloat();
     reg [3:0]  _D;
     wire [3:0] F;
     wire [1:0] P;
-    PureGateToFloat U1(_D,F,P);
+    GateToFloat U1(_D,F,P);
 	 
     initial begin
         _D  = 4'b0101;
