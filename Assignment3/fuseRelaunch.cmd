@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment3/testlamb5FSMControl_isim_beh.exe" -prj "C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment3/testlamb5FSMControl_beh.prj" "work.testlamb5FSMControl" "work.glbl" 

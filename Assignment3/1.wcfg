@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment3/testDCounter_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testDCounter" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/testDCounter/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[7:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testDCounter/sysClk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sysClk</obj_property>
+      <obj_property name="ObjectShortName">sysClk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testDCounter/sysRst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sysRst</obj_property>
+      <obj_property name="ObjectShortName">sysRst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testDCounter/version" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">version[5:0]</obj_property>
+      <obj_property name="ObjectShortName">version[5:0]</obj_property>
+   </wvobject>
+</wave_config>
