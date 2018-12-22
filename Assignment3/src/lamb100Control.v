@@ -1,4 +1,13 @@
-
+module lamb100Control(
+    input trigger,
+    input sysRst,
+    output [6:0]counter,
+    output [99:0]lamb
+);
+carry101Counter c101C(
+    .sysClk(trigger),
+    .sysRst(sysRst),
+    .counter(counter));
 //====================Truthtable Variable:0====================
 wire tU0U115Out;
 wire tU0U117Out;
@@ -5434,3 +5443,6 @@ and U99U120(tU99U120Out,~counter[0],counter[1],~counter[2],counter[3],counter[4]
 and U99U121(tU99U121Out,counter[0],~counter[1],~counter[2],~counter[3],~counter[4],~counter[6]);
 and U99U122(tU99U122Out,~counter[0],~counter[2],~counter[3],~counter[4],counter[5],~counter[6]);
 and U99U123(tU99U123Out,counter[0],~counter[1],~counter[2],~counter[3],~counter[5],~counter[6]);
+//print("assign lamb={%s}"% (''.join([("tU%dU00Out,"%i) for i in range(0,100)])[:-1]))
+assign lamb={tU0U00Out,tU1U00Out,tU2U00Out,tU3U00Out,tU4U00Out,tU5U00Out,tU6U00Out,tU7U00Out,tU8U00Out,tU9U00Out,tU10U00Out,tU11U00Out,tU12U00Out,tU13U00Out,tU14U00Out,tU15U00Out,tU16U00Out,tU17U00Out,tU18U00Out,tU19U00Out,tU20U00Out,tU21U00Out,tU22U00Out,tU23U00Out,tU24U00Out,tU25U00Out,tU26U00Out,tU27U00Out,tU28U00Out,tU29U00Out,tU30U00Out,tU31U00Out,tU32U00Out,tU33U00Out,tU34U00Out,tU35U00Out,tU36U00Out,tU37U00Out,tU38U00Out,tU39U00Out,tU40U00Out,tU41U00Out,tU42U00Out,tU43U00Out,tU44U00Out,tU45U00Out,tU46U00Out,tU47U00Out,tU48U00Out,tU49U00Out,tU50U00Out,tU51U00Out,tU52U00Out,tU53U00Out,tU54U00Out,tU55U00Out,tU56U00Out,tU57U00Out,tU58U00Out,tU59U00Out,tU60U00Out,tU61U00Out,tU62U00Out,tU63U00Out,tU64U00Out,tU65U00Out,tU66U00Out,tU67U00Out,tU68U00Out,tU69U00Out,tU70U00Out,tU71U00Out,tU72U00Out,tU73U00Out,tU74U00Out,tU75U00Out,tU76U00Out,tU77U00Out,tU78U00Out,tU79U00Out,tU80U00Out,tU81U00Out,tU82U00Out,tU83U00Out,tU84U00Out,tU85U00Out,tU86U00Out,tU87U00Out,tU88U00Out,tU89U00Out,tU90U00Out,tU91U00Out,tU92U00Out,tU93U00Out,tU94U00Out,tU95U00Out,tU96U00Out,tU97U00Out,tU98U00Out,tU99U00Out};
+endmodule

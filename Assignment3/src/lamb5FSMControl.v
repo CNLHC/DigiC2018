@@ -1,8 +1,12 @@
 module lamb5FSMControl(
     input trigger,
     input sysRst,
-    output reg [4:0]lamb);
+    output reg [4:0]lamb,
+    output wire [2:0]counter
+);
     reg [3:0]index;
+
+    assign counter=index[2:0];
     always @(posedge trigger or posedge sysRst)begin
         if(sysRst)begin
             index<=0;
@@ -37,11 +41,13 @@ module testlamb5FSMControl();
     reg trigger;
     reg sysRst;
     wire [4:0] lamb;
+    wire [2:0] counter;
     
     lamb5FSMControl U1(
         trigger,
         sysRst,
-        lamb
+        lamb,
+        counter
     );
     initial begin
         sysRst=1;
@@ -52,7 +58,5 @@ module testlamb5FSMControl();
         #5
         trigger=~trigger;
     end
-
-
 endmodule
 

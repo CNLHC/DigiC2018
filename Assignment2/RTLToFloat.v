@@ -19,7 +19,7 @@ always @(posedge sysClk or negedge sysRst) begin
         shiftCount <=0;
 		  F<=4'b0000;
 		  P<=0;
-		  previousBuffer<=;
+		  previousBuffer<=0;
 		  outBuffer<=0;
     end
     else begin 

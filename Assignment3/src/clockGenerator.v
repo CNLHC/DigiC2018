@@ -17,11 +17,12 @@ module clockGenerator(
         else begin
             if(!paused)begin
                 case(dividerCoeff)
-                    2'b00:dividerSup<=50000000;
-                    2'b01:dividerSup<=100000000;
-                    2'b10:dividerSup<=150000000;
+                    2'b00:dividerSup<=12500000;
+                    2'b01:dividerSup<=25000000;
+                    2'b10:dividerSup<=50000000;
                     2'b11:tiktok<=manualClk;
                 endcase
+                dividerCounter<=dividerCounter+1;
                 
                 if(dividerCounter>dividerSup)begin
                     dividerCounter<=0;

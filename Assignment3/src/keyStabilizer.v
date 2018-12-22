@@ -1,6 +1,4 @@
-`timescale 1ns / 1ps
 `define relaxCycle relaxTimeInMs*50*1000 // under clock at 50Mhz
-
 
 module keyStabilizer #(
 	parameter relaxTimeInMs=20)(
@@ -13,9 +11,9 @@ module keyStabilizer #(
 	reg [32:0]counts1;
 	reg [32:0]counts2;
 	
-	always @(posedge sysClk or negedge  sysRst)
+	always @(posedge sysClk or posedge sysRst)
 	begin
-		if(!sysRst)begin
+		if(sysRst)begin
 			counts1<=0;
 			keyFlag[0]<=0;
 		end
@@ -35,9 +33,9 @@ module keyStabilizer #(
 		end
 	end
 	
-	always @(posedge sysClk or negedge sysRst)
+	always @(posedge sysClk or posedge sysRst)
 	begin
-		if(!sysRst)begin
+		if(sysRst)begin
 			counts2<=0;
 			keyFlag[1]<=0;
 		end

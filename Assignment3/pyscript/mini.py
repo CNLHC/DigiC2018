@@ -39,9 +39,12 @@ class Gate():
 
 
     def getInstanceExpr(self):
-        paraListStr = functools.reduce(lambda x,y:"%s%s,"%(x,(y if self._subVariableNot[y] else '~'+y)),self._subVariableName,'')[:-1]
+        paraListStr = functools.reduce(lambda x,y:"%s%s,"%(x,(y if self._subVariableNot[y] else '~'+y)),self._subVariableName,',')[:-1]
         subGateOutStr = functools.reduce(lambda x,y:"%s%s,"%(x,y),[i.outputWire for i in self._subGate ],',')[:-1]
-        return "%s %s(%s,%s%s);"%(self.primative,self.instanceName,
+
+        return "%s %s(%s%s%s);"%(
+                self.primative,
+                self.instanceName,
                 self._constructOutWireName(),
                 paraListStr,
                 subGateOutStr
@@ -110,7 +113,7 @@ def main():
     gate = [parseGate(exp.__str__(),inst='U%dU'%v) for v,exp in enumerate(exps)]
     with open(args.outfile,'w') as fp:
         for v,e in enumerate(gate):
-            fp.write("\n====================Truthtable Inst:%d====================\n"%v)
+            fp.write("\n//====================Truthtable Variable:%d====================\n"%v)
             fp.writelines([i+'\n' for i in e.flattenOut()])
 
 if __name__=="__main__":

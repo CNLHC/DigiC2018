@@ -1,10 +1,9 @@
 module lamb5Control(
     input trigger,
     input sysRst,
-    output wire [4:0]lamb
+    output wire [4:0]lamb,
+    output wire [2:0]counter
 );
-assign lamb = {tU0U00Out,tU1U00Out,tU2U00Out,tU3U00Out,tU4U00Out};
-wire [2:0]counter;
 carry6Counter c6cU1( 
     .sysClk(trigger),
     .sysRst(sysRst),
@@ -41,17 +40,21 @@ wire tU4U11Out;
 or U4U00(tU4U00Out,counter[1],tU4U10Out,tU4U11Out);
 and U4U10(tU4U10Out,~counter[0],counter[2]);
 and U4U11(tU4U11Out,counter[0],~counter[1],~counter[2]);
+assign lamb = {tU0U00Out,tU1U00Out,tU2U00Out,tU3U00Out,tU4U00Out};
+
 endmodule
 
 module testlamb5Control();
     reg trigger;
     reg sysRst;
     wire [4:0] lamb;
+    wire [2:0] counter;
     
     lamb5Control U1(
         trigger,
         sysRst,
-        lamb
+        lamb,
+        counter
     );
     initial begin
         sysRst<=1;
