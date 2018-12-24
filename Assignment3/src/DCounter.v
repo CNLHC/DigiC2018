@@ -19,8 +19,8 @@ module DCounter#(
             DFF U1(
                 .C(~counter[i-1]), 
                 ._CLR(~rst),
-                .Q(counter[i]), 
-                .D(~counter[i])
+                .D(~counter[i]),
+                .Q(counter[i])
             );
         end
     endgenerate
@@ -31,8 +31,8 @@ module testDCounter();
     reg sysClk;
     reg sysRst;
     reg [5:0]  version;
-    wire [7:0] counter;
-    DCounter#(8)U1(sysClk,sysRst,counter); 
+    wire [6:0] counter;
+    DCounter#(7)U1(sysClk,sysRst,counter); 
     initial begin
         version=3;
         sysClk=0;
@@ -45,6 +45,10 @@ module testDCounter();
     always begin
         #5
         sysClk= ~sysClk;
+    end
+    always begin
+        #1000 sysRst=~sysRst;
+        #1 sysRst=~sysRst;
     end
 endmodule
 

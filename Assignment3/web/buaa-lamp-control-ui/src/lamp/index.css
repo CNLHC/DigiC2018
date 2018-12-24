@@ -1,0 +1,18 @@
+.lamp-unit{
+    height: 96px;
+    width: auto;
+    min-width: 96px;
+}
+.lamp-unit img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+.lamp-unit .img-container{
+    height: 96px;
+    width: auto;
+    min-width: 96px;
+
+}

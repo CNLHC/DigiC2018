@@ -1,3 +1,5 @@
+
+`timescale 1us/1ns
 module carry101Counter(
     input sysClk,
     input sysRst,
@@ -10,12 +12,13 @@ module carry101Counter(
         .rst(resetSignal),
         .counter(counter));
 
-    and(carry101Out,counter[6],counter[5],~counter[4],~counter[3],counter[2],~counter[1],counter[0]);
+    and#(0.1)(carry101Out,counter[6],counter[5],~counter[4],~counter[3],counter[2],~counter[1],counter[0]);
     or(resetSignal,carry101Out,sysRst);
 
 endmodule
-
 module testCarry101Counter();
+
+
     reg sysClk;
     reg sysRst;
     reg [5:0]  version;
@@ -35,6 +38,12 @@ module testCarry101Counter();
     always begin
         #5
         sysClk= ~sysClk;
+    end
+    always begin
+        #1536
+        sysRst<= ~sysRst;
+        #1
+        sysRst<= ~sysRst;
     end
 endmodule
 

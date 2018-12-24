@@ -1,3 +1,5 @@
 --top-module
 GoldenTop
+-I ./Uart
+-I .
 #-Wno-UNOPTIMIZABLE

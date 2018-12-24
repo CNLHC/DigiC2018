@@ -1,3 +1,5 @@
+
+`timescale 1us/1ps
 module carry6Counter(
     input sysClk,
     input sysRst,
@@ -9,8 +11,7 @@ module carry6Counter(
         .sysClk(sysClk),
         .rst(resetSignal),
         .counter(counter));
-
-    and(carry6Out,counter[2],counter[1],~counter[0]);
+    and#(1)(carry6Out,counter[2],counter[1],~counter[0]);
     or(resetSignal,carry6Out,sysRst);
 
 endmodule
@@ -20,12 +21,12 @@ module testCarry6Counter();
     reg sysRst;
     reg [5:0]  version;
     wire [2:0] counter;
-    carry6Counter#(8)U1(sysClk,sysRst,counter); 
+    carry6Counter U1(sysClk,sysRst,counter); 
     initial begin
         version=4;
         sysClk=0;
         sysRst=1;
-        #1
+        #15
         sysRst=0;
         #30 sysRst=1;
         #15 sysRst=0;
