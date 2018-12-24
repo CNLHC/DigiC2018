@@ -24,5 +24,5 @@ def boardData(request):
         print('serial error')
         hold=True
 
-    return JsonResponse({'count':len(status),'status':status,'hold':hold})
+    return JsonResponse({'count':len(status),'status':status,'hold':hold,'counter':int(counter,16)})
 
