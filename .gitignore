@@ -4,3 +4,7 @@
 *.doc
 *.ppt
 *.doc
+*.ipf
+*.swp
+*.log
+*.mpf
