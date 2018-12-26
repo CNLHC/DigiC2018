@@ -1,0 +1,27 @@
+digraph G {
+    rankdir=LR
+    node[shape=circle]
+    A[label="00000"]
+    B[label="11111"]
+    C[label="10101"]
+    D[label="10001"]
+    E[label="10011"]
+    F[label="10010"]
+    O[label="Others"]
+
+    A->B[label="0/"]
+    B->C[label="0/"]
+    C->D[label="0/"]
+    D->E[label="0/"]
+    E->F[label="0/"]
+    A->A[label="1/"]
+    B->A[label="1/"]
+    C->A[label="1/"]
+    D->A[label="1/"]
+    E->A[label="1/"]
+    F->A[label="1/"]
+    F->A[label="0/"]
+
+    O->A[label="1/"]
+    O->A[label="0/"]
+}
