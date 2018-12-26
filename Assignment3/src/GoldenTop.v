@@ -51,24 +51,34 @@ module GoldenTop(
          .tiktok(lambTikTok)
      );
 
-     lamb5Control l5C(
-         .trigger(lambTikTok),
-         .sysRst(GlobalRst),
-         .lamb(lamb),
-         .counter(counter)
-     );
+     //Basic 1: five lamp, use gate level
+     //lamb5Control l5C(
+     //    .trigger(lambTikTok),
+     //    .sysRst(GlobalRst),
+     //    .lamb(lamb),
+     //    .counter(counter)
+     //);
+     //Basic 2: five lamp, use fsm level
      //lamb5FSMControl l5C(
      //  .trigger(lambTikTok),
      //  .sysRst(GlobalRst),
      //  .lamb(lamb[4:0]),
      //  .counter(counter)
      //  );
+     //Basic 3: 100 lamp, use gate level
      //lamb100Control l100c(
      //  .trigger(lambTikTok),
      //  .sysRst(GlobalRst),
      //  .lamb(lamb),
      //  .counter(counter)
      //);
+     //extry 1: 100 lamp, use 74160 and specific control logic
+     extraLampControl eLc(
+       .trigger(lambTikTok),
+       .sysRst(GlobalRst),
+       .lamb(lamb),
+       .counter(counter));
+        
 
      reg LambTxValid;
      wire LambTxReady;
@@ -98,7 +108,7 @@ module GoldenTop(
          if(GlobalRst)begin
              LambTxCounter<=0;
              LambSended<=0;
-             LambTxData<=8'hbb;
+             LambTxData<=8'hee;
              nsIter<=0;
              TxTik<=0;
          end
@@ -131,7 +141,7 @@ module GoldenTop(
                      11:LambTxData<=lamb[23:16];
                      12:LambTxData<=lamb[15:8];
                      13:LambTxData<=lamb[7:0];
-                     14:LambTxData<=8'hbb;
+                     14:LambTxData<=8'hee;
                      15:begin 
                          LambTxValid<=0;
                          nsIter<=0;

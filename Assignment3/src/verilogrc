@@ -2,4 +2,5 @@
 GoldenTop
 -I ./Uart
 -I .
+-I ./extra
 #-Wno-UNOPTIMIZABLE

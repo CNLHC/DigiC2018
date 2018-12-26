@@ -29,11 +29,15 @@ class App extends Component {
     let LampArray=[]
     let counter = 0
     const {payload }=this.state
+    let withExtra = false
     if(payload!==undefined){
       if(payload.status!=undefined)
         LampArray=payload.status
       if(payload.counter!=undefined)
         counter = payload.counter
+      if(payload.extra!=undefined &&payload.extra!=null)
+        withExtra=true
+
     }
     LampArray = LampArray.map((e,v)=><LampUnit light={e} key={v}/>)
     return (
@@ -50,7 +54,17 @@ class App extends Component {
       <div className={"lamp-list"}>
         {LampArray}
       </div></div>
-        <h1>counter:{counter}</h1>
+      {
+        withExtra?
+        <div>
+        <h1>状态:{payload.extra.counter}</h1>
+        <h1>控制段:{payload.extra.seg}</h1>
+      </div>
+        :
+
+        <h1>state:{counter}</h1>
+      }
+      
       </div>
     );
   }

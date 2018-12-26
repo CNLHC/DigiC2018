@@ -109,7 +109,6 @@ def main():
 
     tt = ttReader(fp)
     exps = expGenerate(tt)
-    print(exps[2])
     gate = [parseGate(exp.__str__(),inst='U%dU'%v) for v,exp in enumerate(exps)]
     with open(args.outfile,'w') as fp:
         for v,e in enumerate(gate):

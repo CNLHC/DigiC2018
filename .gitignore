@@ -8,3 +8,19 @@
 *.swp
 *.log
 *.mpf
+Assignment2/auto_project_xdb/tmp/ipf/__REGISTRY__/impact/ModeBS/Device 0/regkeys
+Assignment2/auto_project_xdb/tmp/ipf/__REGISTRY__/impact/ModeACEMPM/regkeys
+*.lock
+Assignment2/auto_project_xdb/tmp/ipf/__REGISTRY__/impact/regkeys
+Assignment2/auto_project_xdb/tmp/ipf/__REGISTRY__/impact/ModeSS/regkeys
+Assignment2/auto_project_xdb/tmp/ipf/__REGISTRY__/impact/ModeSPI/regkeys
+Assignment2/auto_project_xdb/tmp/ipf/__REGISTRY__/impact/ModeSM/regkeys
+Assignment2/auto_project_xdb/tmp/ipf/__REGISTRY__/impact/ModePFF/regkeys
+Assignment2/auto_project_xdb/tmp/ipf/__REGISTRY__/impact/ModeHW140/regkeys
+Assignment2/auto_project_xdb/tmp/ipf/__REGISTRY__/impact/ModeBS/regkeys
+Assignment2/auto_project_xdb/tmp/ipf/__REGISTRY__/impact/ModeBS/Device 1/regkeys
+Assignment2/auto_project_xdb/tmp/ipf/__REGISTRY__/impact/ModeACECF/regkeys
+Assignment2/auto_project_xdb/tmp/ipf/__REGISTRY__/common/regkeys
+Assignment2/auto_project_xdb/tmp/ipf/__REGISTRY__/_ProjRepoInternal_/regkeys
+Assignment2/auto_project_xdb/tmp/ipf/version
+*.docx
