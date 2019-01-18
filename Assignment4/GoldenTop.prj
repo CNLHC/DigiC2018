@@ -1,0 +1,8 @@
+verilog work "src/Uart/UartClockGenerator.v"
+verilog work "src/Uart/parity.v"
+verilog work "src/Uart/BytesFifo.v"
+verilog work "src/Uart/Uart.v"
+verilog work "src/scanComDriver.v"
+verilog work "src/RealClockGenerator.v"
+verilog work "src/digitDecoder.v"
+verilog work "src/GoldenTop.v"

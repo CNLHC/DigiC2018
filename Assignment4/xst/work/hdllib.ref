@@ -1,0 +1,10 @@
+MO RealClockGenerator NULL src/RealClockGenerator.v vlg07/_real_clock_generator.bin 1547807757
+MO digitDecoder NULL src/digitDecoder.v vlg27/digit_decoder.bin 1547807757
+MO scanComDriver NULL src/scanComDriver.v vlg70/scan_com_driver.bin 1547807757
+MO Uart NULL src/Uart/Uart.v vlg28/_uart.bin 1547807757
+MO TestBytesFifo NULL src/Uart/BytesFifo.v vlg47/_test_bytes_fifo.bin 1547807757
+MO testUart NULL src/Uart/Uart.v vlg1C/test_uart.bin 1547807757
+MO BytesFifo NULL src/Uart/BytesFifo.v vlg63/_bytes_fifo.bin 1547807757
+MO parity NULL src/Uart/parity.v vlg29/parity.bin 1547807757
+MO GoldenTop NULL src/GoldenTop.v vlg04/_golden_top.bin 1547807757
+MO UartClockGenerator NULL src/Uart/UartClockGenerator.v vlg77/_uart_clock_generator.bin 1547807757

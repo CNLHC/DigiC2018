@@ -19,6 +19,7 @@ module lamb5FSMControl(
                 3:index<=4;
                 4:index<=5;
                 5:index<=0;
+                default:index<=0;
             endcase
         end
     end

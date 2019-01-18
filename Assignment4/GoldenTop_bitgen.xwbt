@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\cn\Desktop\Project\DigitalCircuit\Assignment4\GoldenTop.ncd
+OUTFILE=C:\Users\cn\Desktop\Project\DigitalCircuit\Assignment4\GoldenTop.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4vq100
+WORKINGDIR=C:\Users\cn\Desktop\Project\DigitalCircuit\Assignment4
+LICENSE=WebPack
+USER_INFO=__0_0_0

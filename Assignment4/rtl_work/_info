@@ -1,0 +1,174 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4
+T_opt
+!s110 1547803607
+VIONg>Em`EC_mk7?lmX]hH3
+04 13 4 work TestBytesFifo fast 0
+=2-000ec6a29bae-5c419bd7-b2-9c
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z2 OL;O;10.4;61
+T_opt1
+!s110 1547788821
+V5fVH@D9SA52Ue3bJ7e?9E2
+Z3 04 8 4 work testUart fast 0
+=1-000ec6a29bae-5c416215-41-5150
+R1
+n@_opt1
+R2
+R0
+T_opt2
+!s110 1547743772
+V6a@cF^^QJ7[105ak1R;M=2
+R3
+=1-0c9d9284f543-5c40b21c-13a-1020
+R1
+n@_opt2
+R2
+R0
+vBytesFifo
+Z4 !s110 1547803602
+!i10b 1
+!s100 5G7SC2=d<2mSS3WzJLGVc2
+I^Ojj3j<F8A4MahWblXM>50
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z6 w1547803598
+Z7 8C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v
+Z8 FC:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v
+L0 2
+Z9 OL;L;10.4;61
+r1
+!s85 0
+31
+Z10 !s108 1547803602.808000
+Z11 !s107 C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v|
+Z12 !s90 -reportprogress|300|C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v|
+!i113 0
+n@bytes@fifo
+vglbl
+!s110 1547787767
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+ID8jz_F5S[UR>7FLjzBl7c1
+R5
+R0
+w1381681120
+8C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FC:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+R9
+r1
+!s85 0
+31
+!s108 1547787767.288000
+!s107 C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 0
+vparity
+Z13 !s110 1547787433
+!i10b 1
+!s100 g^?RJKT?m4GmH]l^A0UAY3
+IaMNWXD32kYHcoTn<GIQ2>1
+R5
+R0
+w1547783754
+8src/Uart/parity.v
+Fsrc/Uart/parity.v
+L0 1
+R9
+r1
+!s85 0
+31
+!s108 1547787433.828000
+!s107 src/Uart/parity.v|
+!s90 -reportprogress|300|src/Uart/parity.v|
+!i113 0
+vTestBytesFifo
+R4
+!i10b 1
+!s100 f?chM^VkHi<A54U5kZ<0U3
+IATNYGf33aMIUC37P85@VF0
+R5
+R0
+R6
+R7
+R8
+L0 61
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+n@test@bytes@fifo
+vtestUart
+Z14 !s110 1547788816
+!i10b 1
+!s100 Rl`h>EY?bO^haCeRh;d_31
+I01@UoDz@R1CV;HeVI2B401
+R5
+R0
+Z15 w1547787256
+Z16 8C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/Uart.v
+Z17 FC:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/Uart.v
+L0 186
+R9
+r1
+!s85 0
+31
+Z18 !s108 1547788816.898000
+Z19 !s107 C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/Uart.v|
+Z20 !s90 -reportprogress|300|C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/Uart.v|
+!i113 0
+ntest@uart
+vUart
+R14
+!i10b 1
+!s100 ?7@ORVV_k<oAfb2Jh^GVb0
+I_z2Jg68SkLZPnVQ9EW>R62
+R5
+R0
+R15
+R16
+R17
+L0 2
+R9
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 0
+n@uart
+vUartClockGenerator
+R13
+!i10b 1
+!s100 eO;YG>00L1nX8o=B[Rb]i3
+I?0267EhajHA?7iQXTJn<12
+R5
+R0
+w1545578301
+8src/Uart/UartClockGenerator.v
+Fsrc/Uart/UartClockGenerator.v
+L0 4
+R9
+r1
+!s85 0
+31
+!s108 1547787433.760000
+!s107 src/Uart/UartClockGenerator.v|
+!s90 -reportprogress|300|src/Uart/UartClockGenerator.v|
+!i113 0
+n@uart@clock@generator

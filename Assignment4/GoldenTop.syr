@@ -1,0 +1,839 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: GoldenTop.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GoldenTop.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GoldenTop"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-vq100
+
+---- Source Options
+Top Module Name                    : GoldenTop
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "src/Uart/UartClockGenerator.v" in library work
+Compiling verilog file "src/Uart/parity.v" in library work
+Module <UartClockGenerator> compiled
+Compiling verilog file "src/Uart/BytesFifo.v" in library work
+Module <parity> compiled
+Module <BytesFifo> compiled
+Compiling verilog file "src/Uart/Uart.v" in library work
+Module <TestBytesFifo> compiled
+Module <Uart> compiled
+Compiling verilog file "src/scanComDriver.v" in library work
+Module <testUart> compiled
+Compiling verilog file "src/RealClockGenerator.v" in library work
+Module <scanComDriver> compiled
+Compiling verilog file "src/digitDecoder.v" in library work
+Module <RealClockGenerator> compiled
+Compiling verilog file "src/GoldenTop.v" in library work
+Module <digitDecoder> compiled
+Module <GoldenTop> compiled
+No errors in compilation
+Analysis of file <"GoldenTop.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <GoldenTop> in library <work>.
+
+Analyzing hierarchy for module <scanComDriver> in library <work>.
+
+Analyzing hierarchy for module <digitDecoder> in library <work>.
+
+Analyzing hierarchy for module <RealClockGenerator> in library <work> with parameters.
+	Period = "00000000000000000000000111110100"
+	SYS_CLK_SPEED = "00000010111110101111000010000000"
+
+Analyzing hierarchy for module <Uart> in library <work> with parameters.
+	BAUD_RATE = "00000000000000000010010110000000"
+	CLK_SPEED = "00000010111110101111000010000000"
+
+Analyzing hierarchy for module <BytesFifo> in library <work> with parameters.
+	BIT_PER_BYTES = "00000000000000000000000000001000"
+	BYTES_SIZE = "00000000000000000000001000000000"
+
+Analyzing hierarchy for module <UartClockGenerator> in library <work> with parameters.
+	BAUD_RATE = "00000000000000000010010110000000"
+	SYS_CLK_SPEED = "00000010111110101111000010000000"
+
+Analyzing hierarchy for module <parity> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <GoldenTop>.
+WARNING:Xst:852 - "src/GoldenTop.v" line 35: Unconnected input port 'data' of instance 'dDec' is tied to GND.
+Module <GoldenTop> is correct for synthesis.
+ 
+Analyzing module <scanComDriver> in library <work>.
+Module <scanComDriver> is correct for synthesis.
+ 
+Analyzing module <digitDecoder> in library <work>.
+Module <digitDecoder> is correct for synthesis.
+ 
+Analyzing module <RealClockGenerator> in library <work>.
+	Period = 32'sb00000000000000000000000111110100
+	SYS_CLK_SPEED = 32'sb00000010111110101111000010000000
+Module <RealClockGenerator> is correct for synthesis.
+ 
+Analyzing module <Uart> in library <work>.
+	BAUD_RATE = 32'sb00000000000000000010010110000000
+	CLK_SPEED = 32'sb00000010111110101111000010000000
+Module <Uart> is correct for synthesis.
+ 
+Analyzing module <BytesFifo> in library <work>.
+	BIT_PER_BYTES = 32'sb00000000000000000000000000001000
+	BYTES_SIZE = 32'sb00000000000000000000001000000000
+Module <BytesFifo> is correct for synthesis.
+ 
+Analyzing module <UartClockGenerator> in library <work>.
+	BAUD_RATE = 32'sb00000000000000000010010110000000
+	SYS_CLK_SPEED = 32'sb00000010111110101111000010000000
+Module <UartClockGenerator> is correct for synthesis.
+ 
+Analyzing module <parity> in library <work>.
+Module <parity> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <heartBeatSendFlag> in unit <GoldenTop> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <LambTxCounter> in unit <GoldenTop> has a constant value of 000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <LambSended> in unit <GoldenTop> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <nsIter> in unit <GoldenTop> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <TxTik> in unit <GoldenTop> has a constant value of 000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <ResponseFSM> in unit <GoldenTop> has a constant value of 00000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <errorCount> in unit <GoldenTop> has a constant value of 00000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <ReturnCount> in unit <GoldenTop> has a constant value of 00000000000 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <scanComDriver>.
+    Related source file is "src/scanComDriver.v".
+    Found 2-bit register for signal <COM>.
+    Found 8-bit register for signal <boundedData>.
+    Found 11-bit up counter for signal <flip>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  10 D-type flip-flop(s).
+Unit <scanComDriver> synthesized.
+
+
+Synthesizing Unit <digitDecoder>.
+    Related source file is "src/digitDecoder.v".
+Unit <digitDecoder> synthesized.
+
+
+Synthesizing Unit <RealClockGenerator>.
+    Related source file is "src/RealClockGenerator.v".
+    Found 1-bit register for signal <dividedClock>.
+    Found 64-bit up counter for signal <dividerCounter>.
+    Found 64-bit comparator less for signal <dividerCounter$cmp_lt0000> created at line 19.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <RealClockGenerator> synthesized.
+
+
+Synthesizing Unit <BytesFifo>.
+    Related source file is "src/Uart/BytesFifo.v".
+WARNING:Xst:1872 - Variable <ntIter> is used but never assigned.
+    Found 512x8-bit dual-port RAM <Mram_rf> for signal <rf>.
+    Found 8-bit register for signal <out_data>.
+    Found 9-bit up counter for signal <pHead>.
+    Found 9-bit up counter for signal <pTail>.
+    Found 11-bit updown counter for signal <tBytesCounter>.
+    Found 1-bit register for signal <writeLock>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Counter(s).
+	inferred   9 D-type flip-flop(s).
+Unit <BytesFifo> synthesized.
+
+
+Synthesizing Unit <UartClockGenerator>.
+    Related source file is "src/Uart/UartClockGenerator.v".
+    Found 1-bit register for signal <dividedClock>.
+    Found 64-bit up counter for signal <dividerCounter>.
+    Found 64-bit comparator less for signal <dividerCounter$cmp_lt0000> created at line 19.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <UartClockGenerator> synthesized.
+
+
+Synthesizing Unit <parity>.
+    Related source file is "src/Uart/parity.v".
+    Found 256x1-bit ROM for signal <paritybit>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <parity> synthesized.
+
+
+Synthesizing Unit <Uart>.
+    Related source file is "src/Uart/Uart.v".
+WARNING:Xst:646 - Signal <TXParity> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <RxFIFOReady> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <RXParity> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1799 - State 000011 is never reached in FSM <RxFsm>.
+    Found finite state machine <FSM_0> for signal <RxFsm>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | UartClock                 (rising_edge)        |
+    | Reset              | sysRst                    (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000000                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <TxFsm>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | UartClock                 (rising_edge)        |
+    | Reset              | sysRst                    (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <Tx>.
+    Found 3-bit register for signal <RxBitCounter>.
+    Found 3-bit adder for signal <RxBitCounter$addsub0000> created at line 99.
+    Found 8-bit register for signal <RxBufData>.
+    Found 1-bit register for signal <RxDataLatched>.
+    Found 1-bit register for signal <RxFIFOValid>.
+    Found 3-bit up counter for signal <TxBitCounter>.
+    Found 1-bit register for signal <TxDataLatched>.
+    Found 1-bit register for signal <TxFIFOReady>.
+    Found 8-bit register for signal <TxLastBuffer>.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <Uart> synthesized.
+
+
+Synthesizing Unit <GoldenTop>.
+    Related source file is "src/GoldenTop.v".
+WARNING:Xst:647 - Input <Switch> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Key> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <tDisplayData> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <stableKey> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <scanOutData> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <heartBeatSendFlag> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <errorCount> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <counterLiteral> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <counter> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <_GlobalRst> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <TxTik> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <TxReady> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <TxFsm> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <RxBuffered> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ReturnCount> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ResponseFSM> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <PreRxData> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <LambTxCounter> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <LambSended> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <PacketFSM>.
+    Found 1-bit register for signal <RxReady>.
+    Found 11-bit comparator less for signal <RxReady$cmp_lt0000> created at line 168.
+    Found 8-bit register for signal <TxData>.
+    Found 1-bit register for signal <TxValid>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <GoldenTop> synthesized.
+
+WARNING:Xst:524 - All outputs of the instance <U1> of the block <parity> are unconnected in block <Uart>.
+   This instance will be removed from the design along with all underlying logic
+WARNING:Xst:524 - All outputs of the instance <dDec> of the block <digitDecoder> are unconnected in block <GoldenTop>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 512x8-bit dual-port RAM                               : 2
+# Adders/Subtractors                                   : 1
+ 3-bit adder                                           : 1
+# Counters                                             : 10
+ 11-bit up counter                                     : 1
+ 11-bit updown counter                                 : 2
+ 3-bit up counter                                      : 1
+ 64-bit up counter                                     : 2
+ 9-bit up counter                                      : 4
+# Registers                                            : 27
+ 1-bit register                                        : 20
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 8-bit register                                        : 5
+# Comparators                                          : 3
+ 11-bit comparator less                                : 1
+ 64-bit comparator less                                : 2
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <UartController1/TxFsm/FSM> on signal <TxFsm[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <UartController1/RxFsm/FSM> on signal <RxFsm[1:2]> with sequential encoding.
+--------------------
+ State  | Encoding
+--------------------
+ 000000 | 00
+ 000001 | 01
+ 000010 | 10
+ 000011 | unreached
+--------------------
+INFO:Xst:2261 - The FF/Latch <boundedData_1> in Unit <SCD1> is equivalent to the following 6 FFs/Latches, which will be removed : <boundedData_2> <boundedData_3> <boundedData_4> <boundedData_5> <boundedData_6> <boundedData_7> 
+WARNING:Xst:1710 - FF/Latch <boundedData_0> (without init value) has a constant value of 1 in block <SCD1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <boundedData_1> (without init value) has a constant value of 0 in block <SCD1>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <BytesFifo>.
+INFO:Xst:3226 - The RAM <Mram_rf> will be implemented as a BLOCK RAM, absorbing the following register(s): <out_data>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <sysClk>        | rise     |
+    |     weA            | connected to signal <_and0000>      | high     |
+    |     addrA          | connected to signal <pTail>         |          |
+    |     diA            | connected to signal <in_data>       |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 512-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <sysClk>        | rise     |
+    |     enB            | connected to signal <out_data_and0000> | high     |
+    |     addrB          | connected to signal <pHead>         |          |
+    |     doB            | connected to signal <out_data>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <BytesFifo> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# RAMs                                                 : 2
+ 512x8-bit dual-port block RAM                         : 2
+# Adders/Subtractors                                   : 1
+ 3-bit adder                                           : 1
+# Counters                                             : 10
+ 11-bit up counter                                     : 1
+ 11-bit updown counter                                 : 2
+ 3-bit up counter                                      : 1
+ 64-bit up counter                                     : 2
+ 9-bit up counter                                      : 4
+# Registers                                            : 49
+ Flip-Flops                                            : 49
+# Comparators                                          : 3
+ 11-bit comparator less                                : 1
+ 64-bit comparator less                                : 2
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <boundedData_0> (without init value) has a constant value of 1 in block <scanComDriver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <boundedData_1> (without init value) has a constant value of 0 in block <scanComDriver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <boundedData_2> (without init value) has a constant value of 0 in block <scanComDriver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <boundedData_3> (without init value) has a constant value of 0 in block <scanComDriver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <boundedData_4> (without init value) has a constant value of 0 in block <scanComDriver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <boundedData_5> (without init value) has a constant value of 0 in block <scanComDriver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <boundedData_6> (without init value) has a constant value of 0 in block <scanComDriver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <boundedData_7> (without init value) has a constant value of 0 in block <scanComDriver>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <GoldenTop> ...
+
+Optimizing unit <BytesFifo> ...
+
+Optimizing unit <Uart> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GoldenTop, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 245
+ Flip-Flops                                            : 245
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GoldenTop.ngr
+Top Level Output File Name         : GoldenTop
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 750
+#      GND                         : 1
+#      INV                         : 17
+#      LUT1                        : 50
+#      LUT2                        : 12
+#      LUT3                        : 181
+#      LUT3_D                      : 1
+#      LUT3_L                      : 3
+#      LUT4                        : 50
+#      LUT4_L                      : 2
+#      MUXCY                       : 226
+#      MUXF5                       : 8
+#      MUXF6                       : 1
+#      VCC                         : 1
+#      XORCY                       : 197
+# FlipFlops/Latches                : 245
+#      FD                          : 12
+#      FDC                         : 137
+#      FDCE                        : 69
+#      FDE                         : 21
+#      FDPE                        : 3
+#      FDR                         : 1
+#      FDSE                        : 2
+# RAMS                             : 2
+#      RAMB16_S9_S9                : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 2
+#      OBUF                        : 15
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500evq100-4 
+
+ Number of Slices:                      185  out of   4656     3%  
+ Number of Slice Flip Flops:            245  out of   9312     2%  
+ Number of 4 input LUTs:                316  out of   9312     3%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  18  out of     66    27%  
+ Number of BRAMs:                         2  out of     20    10%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)               | Load  |
+-----------------------------------+-------------------------------------+-------+
+Sys_CLK                            | BUFGP                               | 228   |
+UartController1/clcGen/dividedClock| NONE(UartController1/TxBitCounter_2)| 19    |
+-----------------------------------+-------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+GlobalRst(GlobalRst1_INV_0:O)      | NONE(RcG1/dividedClock)| 209   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 12.307ns (Maximum Frequency: 81.255MHz)
+   Minimum input arrival time before clock: 5.538ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Sys_CLK'
+  Clock period: 12.307ns (frequency: 81.255MHz)
+  Total number of paths / destination ports: 269871 / 353
+-------------------------------------------------------------------------
+Delay:               12.307ns (Levels of Logic = 87)
+  Source:            UartController1/clcGen/dividerCounter_0 (FF)
+  Destination:       UartController1/clcGen/dividerCounter_63 (FF)
+  Source Clock:      Sys_CLK rising
+  Destination Clock: Sys_CLK rising
+
+  Data Path: UartController1/clcGen/dividerCounter_0 to UartController1/clcGen/dividerCounter_63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  UartController1/clcGen/dividerCounter_0 (UartController1/clcGen/dividerCounter_0)
+     LUT2:I0->O            1   0.704   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_lut<0> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<0> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<1> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<2> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<3> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<4> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<5> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<6> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<7> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<8> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<9> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<10> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<11> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<12> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<13> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<14> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<15> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<16> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<17> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<18> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<18>)
+     MUXCY:CI->O           1   0.459   0.455  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<19> (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<19>)
+     LUT3:I2->O           66   0.704   1.308  UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<21>1 (UartController1/clcGen/Mcompar_dividerCounter_cmp_lt0000_cy<21>)
+     LUT3:I2->O            1   0.704   0.000  UartController1/clcGen/Mcount_dividerCounter_lut<0> (UartController1/clcGen/Mcount_dividerCounter_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<0> (UartController1/clcGen/Mcount_dividerCounter_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<1> (UartController1/clcGen/Mcount_dividerCounter_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<2> (UartController1/clcGen/Mcount_dividerCounter_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<3> (UartController1/clcGen/Mcount_dividerCounter_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<4> (UartController1/clcGen/Mcount_dividerCounter_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<5> (UartController1/clcGen/Mcount_dividerCounter_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<6> (UartController1/clcGen/Mcount_dividerCounter_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<7> (UartController1/clcGen/Mcount_dividerCounter_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<8> (UartController1/clcGen/Mcount_dividerCounter_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<9> (UartController1/clcGen/Mcount_dividerCounter_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<10> (UartController1/clcGen/Mcount_dividerCounter_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<11> (UartController1/clcGen/Mcount_dividerCounter_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<12> (UartController1/clcGen/Mcount_dividerCounter_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<13> (UartController1/clcGen/Mcount_dividerCounter_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<14> (UartController1/clcGen/Mcount_dividerCounter_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<15> (UartController1/clcGen/Mcount_dividerCounter_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<16> (UartController1/clcGen/Mcount_dividerCounter_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<17> (UartController1/clcGen/Mcount_dividerCounter_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<18> (UartController1/clcGen/Mcount_dividerCounter_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<19> (UartController1/clcGen/Mcount_dividerCounter_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<20> (UartController1/clcGen/Mcount_dividerCounter_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<21> (UartController1/clcGen/Mcount_dividerCounter_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<22> (UartController1/clcGen/Mcount_dividerCounter_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<23> (UartController1/clcGen/Mcount_dividerCounter_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<24> (UartController1/clcGen/Mcount_dividerCounter_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<25> (UartController1/clcGen/Mcount_dividerCounter_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<26> (UartController1/clcGen/Mcount_dividerCounter_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<27> (UartController1/clcGen/Mcount_dividerCounter_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<28> (UartController1/clcGen/Mcount_dividerCounter_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<29> (UartController1/clcGen/Mcount_dividerCounter_cy<29>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<30> (UartController1/clcGen/Mcount_dividerCounter_cy<30>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<31> (UartController1/clcGen/Mcount_dividerCounter_cy<31>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<32> (UartController1/clcGen/Mcount_dividerCounter_cy<32>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<33> (UartController1/clcGen/Mcount_dividerCounter_cy<33>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<34> (UartController1/clcGen/Mcount_dividerCounter_cy<34>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<35> (UartController1/clcGen/Mcount_dividerCounter_cy<35>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<36> (UartController1/clcGen/Mcount_dividerCounter_cy<36>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<37> (UartController1/clcGen/Mcount_dividerCounter_cy<37>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<38> (UartController1/clcGen/Mcount_dividerCounter_cy<38>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<39> (UartController1/clcGen/Mcount_dividerCounter_cy<39>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<40> (UartController1/clcGen/Mcount_dividerCounter_cy<40>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<41> (UartController1/clcGen/Mcount_dividerCounter_cy<41>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<42> (UartController1/clcGen/Mcount_dividerCounter_cy<42>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<43> (UartController1/clcGen/Mcount_dividerCounter_cy<43>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<44> (UartController1/clcGen/Mcount_dividerCounter_cy<44>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<45> (UartController1/clcGen/Mcount_dividerCounter_cy<45>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<46> (UartController1/clcGen/Mcount_dividerCounter_cy<46>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<47> (UartController1/clcGen/Mcount_dividerCounter_cy<47>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<48> (UartController1/clcGen/Mcount_dividerCounter_cy<48>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<49> (UartController1/clcGen/Mcount_dividerCounter_cy<49>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<50> (UartController1/clcGen/Mcount_dividerCounter_cy<50>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<51> (UartController1/clcGen/Mcount_dividerCounter_cy<51>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<52> (UartController1/clcGen/Mcount_dividerCounter_cy<52>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<53> (UartController1/clcGen/Mcount_dividerCounter_cy<53>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<54> (UartController1/clcGen/Mcount_dividerCounter_cy<54>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<55> (UartController1/clcGen/Mcount_dividerCounter_cy<55>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<56> (UartController1/clcGen/Mcount_dividerCounter_cy<56>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<57> (UartController1/clcGen/Mcount_dividerCounter_cy<57>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<58> (UartController1/clcGen/Mcount_dividerCounter_cy<58>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<59> (UartController1/clcGen/Mcount_dividerCounter_cy<59>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<60> (UartController1/clcGen/Mcount_dividerCounter_cy<60>)
+     MUXCY:CI->O           1   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<61> (UartController1/clcGen/Mcount_dividerCounter_cy<61>)
+     MUXCY:CI->O           0   0.059   0.000  UartController1/clcGen/Mcount_dividerCounter_cy<62> (UartController1/clcGen/Mcount_dividerCounter_cy<62>)
+     XORCY:CI->O           1   0.804   0.000  UartController1/clcGen/Mcount_dividerCounter_xor<63> (UartController1/clcGen/Mcount_dividerCounter63)
+     FDC:D                     0.308          UartController1/clcGen/dividerCounter_63
+    ----------------------------------------
+    Total                     12.307ns (9.922ns logic, 2.385ns route)
+                                       (80.6% logic, 19.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UartController1/clcGen/dividedClock'
+  Clock period: 4.619ns (frequency: 216.497MHz)
+  Total number of paths / destination ports: 82 / 22
+-------------------------------------------------------------------------
+Delay:               4.619ns (Levels of Logic = 2)
+  Source:            UartController1/RxBitCounter_0 (FF)
+  Destination:       UartController1/RxBufData_7 (FF)
+  Source Clock:      UartController1/clcGen/dividedClock rising
+  Destination Clock: UartController1/clcGen/dividedClock rising
+
+  Data Path: UartController1/RxBitCounter_0 to UartController1/RxBufData_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.591   0.883  UartController1/RxBitCounter_0 (UartController1/RxBitCounter_0)
+     LUT3:I0->O            4   0.704   0.762  UartController1/RxBufData_1_and000011 (UartController1/N01)
+     LUT3:I0->O            1   0.704   0.420  UartController1/RxBufData_7_and00001 (UartController1/RxBufData_7_and0000)
+     FDE:CE                    0.555          UartController1/RxBufData_7
+    ----------------------------------------
+    Total                      4.619ns (2.554ns logic, 2.065ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Sys_CLK'
+  Total number of paths / destination ports: 17 / 16
+-------------------------------------------------------------------------
+Offset:              5.091ns (Levels of Logic = 3)
+  Source:            Sys_RST (PAD)
+  Destination:       UartController1/RxFiFO/Mram_rf (RAM)
+  Destination Clock: Sys_CLK rising
+
+  Data Path: Sys_RST to UartController1/RxFiFO/Mram_rf
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.218   1.175  Sys_RST_IBUF (GlobalRst_inv)
+     LUT4:I0->O            1   0.704   0.000  UartController1/TxFiFO/_and000011 (UartController1/TxFiFO/_and00001)
+     MUXF5:I1->O           1   0.321   0.420  UartController1/TxFiFO/_and00001_f5 (UartController1/TxFiFO/_and0000)
+     RAMB16_S9_S9:WEA          1.253          UartController1/TxFiFO/Mram_rf
+    ----------------------------------------
+    Total                      5.091ns (3.496ns logic, 1.595ns route)
+                                       (68.7% logic, 31.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UartController1/clcGen/dividedClock'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              5.538ns (Levels of Logic = 3)
+  Source:            Sys_RST (PAD)
+  Destination:       UartController1/RxBufData_6 (FF)
+  Destination Clock: UartController1/clcGen/dividedClock rising
+
+  Data Path: Sys_RST to UartController1/RxBufData_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   1.218   1.175  Sys_RST_IBUF (GlobalRst_inv)
+     LUT3:I0->O            4   0.704   0.762  UartController1/RxBufData_0_and000011 (UartController1/N11)
+     LUT3:I0->O            1   0.704   0.420  UartController1/RxBufData_6_and00001 (UartController1/RxBufData_6_and0000)
+     FDE:CE                    0.555          UartController1/RxBufData_6
+    ----------------------------------------
+    Total                      5.538ns (3.181ns logic, 2.357ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UartController1/clcGen/dividedClock'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            UartController1/Tx (FF)
+  Destination:       Uart_Tx (PAD)
+  Source Clock:      UartController1/clcGen/dividedClock rising
+
+  Data Path: UartController1/Tx to Uart_Tx
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  UartController1/Tx (UartController1/Tx)
+     OBUF:I->O                 3.272          Uart_Tx_OBUF (Uart_Tx)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Sys_CLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            RcG1/dividedClock (FF)
+  Destination:       LED<0> (PAD)
+  Source Clock:      Sys_CLK rising
+
+  Data Path: RcG1/dividedClock to LED<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.447  RcG1/dividedClock (RcG1/dividedClock)
+     OBUF:I->O                 3.272          LED_0_OBUF (LED<0>)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.91 secs
+ 
+--> 
+
+Total memory usage is 4535676 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   36 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Assignment4.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="GoldenTop.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="GoldenTop.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="GoldenTop.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="GoldenTop.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="GoldenTop.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="GoldenTop.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="GoldenTop.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="GoldenTop.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="GoldenTop.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="GoldenTop.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="GoldenTop.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="GoldenTop.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="GoldenTop.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="GoldenTop.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="GoldenTop.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="GoldenTop.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="GoldenTop.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="GoldenTop.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="GoldenTop.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="GoldenTop.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="GoldenTop_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="GoldenTop_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="GoldenTop_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="GoldenTop_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="GoldenTop_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="GoldenTop_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="GoldenTop_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="GoldenTop_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="GoldenTop_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="GoldenTop_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="GoldenTop_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="GoldenTop_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="GoldenTop_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="GoldenTop_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="GoldenTop_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="TestBytesFifo.cmd_log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="TestBytesFifo.fdo"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="TestBytesFifo.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TestBytesFifo.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="TestBytesFifo.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="TestBytesFifo.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="TestBytesFifo_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="TestBytesFifo_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="TestBytesFifo_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="goldentop.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="goldentop.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="goldentop.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="testUart.fdo"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_LOG" xil_pn:name="vsim.wlf"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="work"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1547787759" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1547787759">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547787759" xil_pn:in_ck="-7198553288874756275" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1547787759">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="src/GoldenTop.v"/>
+      <outfile xil_pn:name="src/RealClockGenerator.v"/>
+      <outfile xil_pn:name="src/Uart/BytesFifo.v"/>
+      <outfile xil_pn:name="src/Uart/Uart.v"/>
+      <outfile xil_pn:name="src/Uart/UartClockGenerator.v"/>
+      <outfile xil_pn:name="src/Uart/parity.v"/>
+      <outfile xil_pn:name="src/digitDecoder.v"/>
+      <outfile xil_pn:name="src/scanComDriver.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1547787759" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3583032030126365150" xil_pn:start_ts="1547787759">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547787759" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4771763242113802980" xil_pn:start_ts="1547787759">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547787759" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3967214564882281631" xil_pn:start_ts="1547787759">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547787759" xil_pn:in_ck="-7198553288874756275" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1547787759">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="src/GoldenTop.v"/>
+      <outfile xil_pn:name="src/RealClockGenerator.v"/>
+      <outfile xil_pn:name="src/Uart/BytesFifo.v"/>
+      <outfile xil_pn:name="src/Uart/Uart.v"/>
+      <outfile xil_pn:name="src/Uart/UartClockGenerator.v"/>
+      <outfile xil_pn:name="src/Uart/parity.v"/>
+      <outfile xil_pn:name="src/digitDecoder.v"/>
+      <outfile xil_pn:name="src/scanComDriver.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1547787760" xil_pn:in_ck="-7198553288874756275" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="6256691137558453258" xil_pn:start_ts="1547787759">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="TestBytesFifo.fdo"/>
+      <outfile xil_pn:name="vsim.wlf"/>
+      <outfile xil_pn:name="work"/>
+    </transform>
+    <transform xil_pn:end_ts="1547801692" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1547801692">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547801692" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5992894909232361243" xil_pn:start_ts="1547801692">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547801692" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3967214564882281631" xil_pn:start_ts="1547801692">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547801692" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1547801692">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547801692" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="6541202831423148387" xil_pn:start_ts="1547801692">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547801692" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297138737980" xil_pn:start_ts="1547801692">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547801692" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="4818751011524266411" xil_pn:start_ts="1547801692">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547807762" xil_pn:in_ck="-7198553288874756275" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-2586670391888200716" xil_pn:start_ts="1547807755">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="GoldenTop.lso"/>
+      <outfile xil_pn:name="GoldenTop.ngc"/>
+      <outfile xil_pn:name="GoldenTop.ngr"/>
+      <outfile xil_pn:name="GoldenTop.prj"/>
+      <outfile xil_pn:name="GoldenTop.stx"/>
+      <outfile xil_pn:name="GoldenTop.syr"/>
+      <outfile xil_pn:name="GoldenTop.xst"/>
+      <outfile xil_pn:name="GoldenTop_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1547801700" xil_pn:in_ck="-2942848170532258065" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8119250288791150706" xil_pn:start_ts="1547801700">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547807767" xil_pn:in_ck="8006241730464429057" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="891663718233983929" xil_pn:start_ts="1547807762">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="GoldenTop.bld"/>
+      <outfile xil_pn:name="GoldenTop.ngd"/>
+      <outfile xil_pn:name="GoldenTop_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1547807771" xil_pn:in_ck="-7549153969313688030" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1697458369411087007" xil_pn:start_ts="1547807767">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="GoldenTop.pcf"/>
+      <outfile xil_pn:name="GoldenTop_map.map"/>
+      <outfile xil_pn:name="GoldenTop_map.mrp"/>
+      <outfile xil_pn:name="GoldenTop_map.ncd"/>
+      <outfile xil_pn:name="GoldenTop_map.ngm"/>
+      <outfile xil_pn:name="GoldenTop_map.xrpt"/>
+      <outfile xil_pn:name="GoldenTop_summary.xml"/>
+      <outfile xil_pn:name="GoldenTop_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1547807786" xil_pn:in_ck="2281041588605434843" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1547807771">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="GoldenTop.ncd"/>
+      <outfile xil_pn:name="GoldenTop.pad"/>
+      <outfile xil_pn:name="GoldenTop.par"/>
+      <outfile xil_pn:name="GoldenTop.ptwx"/>
+      <outfile xil_pn:name="GoldenTop.unroutes"/>
+      <outfile xil_pn:name="GoldenTop.xpi"/>
+      <outfile xil_pn:name="GoldenTop_pad.csv"/>
+      <outfile xil_pn:name="GoldenTop_pad.txt"/>
+      <outfile xil_pn:name="GoldenTop_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1547807794" xil_pn:in_ck="-4926680604171389361" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1547807786">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="GoldenTop.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="goldentop.bgn"/>
+      <outfile xil_pn:name="goldentop.bit"/>
+      <outfile xil_pn:name="goldentop.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1547793323" xil_pn:in_ck="-6894448305477563303" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1547793225">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1547807786" xil_pn:in_ck="-1825513780362461922" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1547807783">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="GoldenTop.twr"/>
+      <outfile xil_pn:name="GoldenTop.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

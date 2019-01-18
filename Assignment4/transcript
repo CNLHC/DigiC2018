@@ -1,0 +1,248 @@
+# Reading C:/modeltech64_10.4/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do {TestBytesFifo.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 13:02:47 on Jan 18,2019
+# vlog -reportprogress 300 src/Uart/BytesFifo.v 
+# -- Compiling module BytesFifo
+# -- Compiling module TestBytesFifo
+# 
+# Top level modules:
+# 	TestBytesFifo
+# End time: 13:02:47 on Jan 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 13:02:47 on Jan 18,2019
+# vlog -reportprogress 300 C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 13:02:47 on Jan 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do {TestBytesFifo.fdo}" 
+# Start time: 13:02:47 on Jan 18,2019
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading work.TestBytesFifo(fast)
+# Loading work.BytesFifo(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: cn  Hostname: DESKTOP-JSBIGVK  ProcessID: 4128
+# 
+#           Attempting to use alternate WLF file "./wlftevr37n".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftevr37n
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# 
+# Loading work.TestBytesFifo(fast)
+# Loading work.BytesFifo(fast)
+# Loading work.glbl(fast)
+run -all
+# ** Note: $stop    : src/Uart/BytesFifo.v(119)
+#    Time: 1100 us  Iteration: 0  Instance: /TestBytesFifo
+# Break in Module TestBytesFifo at src/Uart/BytesFifo.v line 119
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# 
+# Loading work.TestBytesFifo(fast)
+# Loading work.BytesFifo(fast)
+# Loading work.glbl(fast)
+vlog C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 13:14:43 on Jan 18,2019
+# vlog -reportprogress 300 C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v 
+# -- Compiling module BytesFifo
+# -- Compiling module TestBytesFifo
+# 
+# Top level modules:
+# 	TestBytesFifo
+# End time: 13:14:43 on Jan 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run -all
+# ** Note: $stop    : src/Uart/BytesFifo.v(119)
+#    Time: 1100 us  Iteration: 0  Instance: /TestBytesFifo
+# Break in Module TestBytesFifo at src/Uart/BytesFifo.v line 119
+run -all
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.TestBytesFifo(fast)
+# Loading work.BytesFifo(fast)
+# Loading work.glbl(fast)
+run -all
+# ** Note: $stop    : C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v(123)
+#    Time: 21620 us  Iteration: 0  Instance: /TestBytesFifo
+# Break in Module TestBytesFifo at C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v line 123
+vlog C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 13:16:59 on Jan 18,2019
+# vlog -reportprogress 300 C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v 
+# -- Compiling module BytesFifo
+# -- Compiling module TestBytesFifo
+# 
+# Top level modules:
+# 	TestBytesFifo
+# End time: 13:16:59 on Jan 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.TestBytesFifo(fast)
+# Loading work.BytesFifo(fast)
+# Loading work.glbl(fast)
+run -all
+# ** Note: $stop    : C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v(125)
+#    Time: 21620 us  Iteration: 0  Instance: /TestBytesFifo
+# Break in Module TestBytesFifo at C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v line 125
+run
+run
+run
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run
+run
+run
+run
+run
+vlog C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/Uart.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 13:20:16 on Jan 18,2019
+# vlog -reportprogress 300 C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/Uart.v 
+# -- Compiling module Uart
+# -- Compiling module testUart
+# 
+# Top level modules:
+# 	testUart
+# End time: 13:20:16 on Jan 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.testUart
+# vsim 
+# Start time: 13:20:20 on Jan 18,2019
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vopt-143) Recognized 2 FSMs in module "Uart(fast)".
+# 
+# Loading work.testUart(fast)
+# Loading work.Uart(fast)
+# Loading work.BytesFifo(fast)
+# Loading work.UartClockGenerator(fast)
+# Loading work.parity(fast)
+add wave -position insertpoint  \
+sim:/testUart/Rx \
+sim:/testUart/RxData \
+sim:/testUart/RxData_ready \
+sim:/testUart/RxData_valid \
+sim:/testUart/Tx \
+sim:/testUart/TxData \
+sim:/testUart/TxData_ready \
+sim:/testUart/TxData_valid \
+sim:/testUart/debugTxFsm \
+sim:/testUart/nsIter \
+sim:/testUart/sysClk \
+sim:/testUart/sysRst
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: cn  Hostname: DESKTOP-JSBIGVK  ProcessID: 4128
+# 
+#           Attempting to use alternate WLF file "./wlfthtbrse".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfthtbrse
+# 
+run -all
+# ** Note: $stop    : C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/Uart.v(230)
+#    Time: 320200 ns  Iteration: 0  Instance: /testUart
+# Break in Module testUart at C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/Uart.v line 230
+vsim -voptargs=+acc work.TestBytesFifo
+# vsim 
+# Start time: 17:26:05 on Jan 18,2019
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading work.TestBytesFifo(fast)
+# Loading work.BytesFifo(fast)
+add wave -position insertpoint  \
+sim:/TestBytesFifo/empty \
+sim:/TestBytesFifo/fillLevel \
+sim:/TestBytesFifo/full \
+sim:/TestBytesFifo/in_data \
+sim:/TestBytesFifo/in_data_ready \
+sim:/TestBytesFifo/in_data_valid \
+sim:/TestBytesFifo/nsIter \
+sim:/TestBytesFifo/out_data \
+sim:/TestBytesFifo/out_data_ready \
+sim:/TestBytesFifo/out_data_valid \
+sim:/TestBytesFifo/sysClk \
+sim:/TestBytesFifo/sysRst
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: cn  Hostname: DESKTOP-JSBIGVK  ProcessID: 4128
+# 
+#           Attempting to use alternate WLF file "./wlftxbqvxh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftxbqvxh
+# 
+run -all
+# ** Note: $stop    : C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v(125)
+#    Time: 21620 us  Iteration: 0  Instance: /TestBytesFifo
+# Break in Module TestBytesFifo at C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v line 125
+vlog C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 17:26:42 on Jan 18,2019
+# vlog -reportprogress 300 C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v 
+# -- Compiling module BytesFifo
+# -- Compiling module TestBytesFifo
+# 
+# Top level modules:
+# 	TestBytesFifo
+# End time: 17:26:42 on Jan 18,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.TestBytesFifo(fast)
+# Loading work.BytesFifo(fast)
+run -all
+# ** Note: $stop    : C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v(122)
+#    Time: 21620 us  Iteration: 0  Instance: /TestBytesFifo
+# Break in Module TestBytesFifo at C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v line 122

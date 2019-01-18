@@ -52,12 +52,12 @@ module GoldenTop(
      );
 
      //Basic 1: five lamp, use gate level
-     //lamb5Control l5C(
-     //    .trigger(lambTikTok),
-     //    .sysRst(GlobalRst),
-     //    .lamb(lamb),
-     //    .counter(counter)
-     //);
+     lamb5Control l5C(
+         .trigger(lambTikTok),
+         .sysRst(GlobalRst),
+         .lamb(lamb),
+         .counter(counter)
+     );
      //Basic 2: five lamp, use fsm level
      //lamb5FSMControl l5C(
      //  .trigger(lambTikTok),
@@ -73,11 +73,11 @@ module GoldenTop(
      //  .counter(counter)
      //);
      //extry 1: 100 lamp, use 74160 and specific control logic
-     extraLampControl eLc(
-       .trigger(lambTikTok),
-       .sysRst(GlobalRst),
-       .lamb(lamb),
-       .counter(counter));
+     //extraLampControl eLc(
+     //  .trigger(lambTikTok),
+     //  .sysRst(GlobalRst),
+     //  .lamb(lamb),
+     //  .counter(counter));
         
 
      reg LambTxValid;
