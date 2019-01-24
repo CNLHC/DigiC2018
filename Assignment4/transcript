@@ -246,3 +246,5 @@ run -all
 # ** Note: $stop    : C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v(122)
 #    Time: 21620 us  Iteration: 0  Instance: /TestBytesFifo
 # Break in Module TestBytesFifo at C:/Users/cn/Desktop/Project/DigitalCircuit/Assignment4/src/Uart/BytesFifo.v line 122
+# End time: 19:33:38 on Jan 18,2019, Elapsed time: 2:07:33
+# Errors: 0, Warnings: 2
